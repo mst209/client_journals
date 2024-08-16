@@ -154,20 +154,20 @@ end
 
 * Find all clients for a particular provider
 ```
-Provider.find(1).clients
+Provider.find(id).clients
 ```
 * Find all providers for a particular client
 ```
-Client.find(1).providers
+Client.find(id).providers
 ```
 * Find all of a particular client's journal entries, sorted by date posted
 ```
-Client.find(1).journal_entries.order(:created_at)
+Client.find(id).journal_entries.order(:created_at)
 ```
 * Find all of the journal entries of all of the clients of a particular provider, sorted by
 date posted
 ```
-Provider.find(1).journal_entries.order(:created_at)
+Provider.find(id).journal_entries.order(:created_at)
 ```
 
 
